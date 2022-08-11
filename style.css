@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: rgb(213, 220, 216);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 200px;
+}
+
+.logo{
+    color: rgb(10, 39, 120);
+     text-decoration: none; /*remove the underline */
+     font-weight: 1000;
+     font-size: 1.8em;
+}
+.navigation a{ /*(a) chossing anchor tags inside nav */
+    color: rgb(10, 39, 120);
+    text-decoration: none;
+    font-weight: 300;
+    font-size:1.3em ;
+    padding-left: 50px;
+}
