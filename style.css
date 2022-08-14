@@ -1,10 +1,46 @@
 /* small screen */
+
 @media only screen and (min-width: 360px) and (max-width: 600px) {
     *{
         padding: 0px;
         margin: 0px;
         background: rgb(243, 2, 2);
     }
+    
+    #container {
+        width: 100vw;
+        height: 100vh;
+        display:grid ;
+        grid-template-rows: 10vh 60vh 20vh 10vh ; /*4 sections*/ 
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "hd"
+        "mn"
+        "sd"
+        "ft" ;
+
+    }
+        #hd {
+            grid-area: hd;
+            background: darkblue;
+        }
+    
+        #mn {
+            grid-area: mn;
+            background: rgb(0, 139, 60);
+
+        }
+    
+        #sd {
+            grid-area: sd;
+            background: rgb(139, 0, 111);
+        }
+    
+        #ft {
+            grid-area: fr;
+            background: rgb(139, 132, 0)اح;
+        }
+    
     
 }
 
@@ -13,12 +49,50 @@
 
 
 /* medium screen */
-@media only screen and (min-width: 601) and (max-width: 800px) {
+@media only screen and (min-width: 601px) and (max-width: 800px) {
     *{
         padding: 0px;
         margin: 0px;
         background: rgb(58, 243, 2);
     }
+
+    #container {
+        width: 100vw;
+        height: 100vh;
+        display:grid ;
+        grid-template-rows: 10vh 60vh 20vh 10vh ; /*4 sections*/ 
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas:
+        "hd hd"
+        "mn mn"
+        "sd sd"
+        "ft ft" ;
+
+    }
+        #hd {
+            grid-area: hd;
+            background: darkblue;
+        }
+    
+        #mn {
+            grid-area: mn;
+            background: rgb(0, 139, 60);
+
+        }
+    
+        #sd {
+            grid-area: sd;
+            background: rgb(139, 0, 111);
+        }
+    
+        #ft {
+            grid-area: fr;
+            background: rgb(139, 132, 0)اح;
+        }
+    
+    
+}
+    
 }
     
 
@@ -31,8 +105,45 @@
     *{
         padding: 0px;
         margin: 0px;
-        background: rgb(243, 2, 2);
+        background: rgb(62, 2, 243);
     }
+
+    #container {
+        width: 100vw;
+        height: 100vh;
+        display:grid ;
+        grid-template-rows: 10vh 60vh 20vh 10vh ; /*4 sections*/ 
+        grid-template-columns: 5fr 2fr;
+        grid-template-areas:
+        "hd hd"
+        "mn mn "
+        "sd sd"
+        "ft ft" ;
+
+    }
+        #hd {
+            grid-area: hd;
+            background: darkblue;
+        }
+    
+        #mn {
+            grid-area: mn;
+            background: rgb(0, 139, 60);
+
+        }
+    
+        #sd {
+            grid-area: sd;
+            background: rgb(139, 0, 111);
+        }
+    
+        #ft {
+            grid-area: fr;
+            background: rgb(139, 132, 0)اح;
+        }
+    
+    
+}
 }
     
 
@@ -52,35 +163,3 @@
 
 
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
-header{
-    background-color: rgb(213, 220, 216);
-    width: 100%;
-    position: fixed;
-    z-index: 999;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 200px;
-}
-
-.logo{
-    color: rgb(10, 39, 120);
-     text-decoration: none; /*remove the underline */
-     font-weight: 1000;
-     font-size: 1.8em;
-}
-.navigation a{ /*(a) chossing anchor tags inside nav */
-    color: rgb(10, 39, 120);
-    text-decoration: none;
-    font-weight: 300;
-    font-size:1.3em ;
-    padding-left: 50px;
-}
