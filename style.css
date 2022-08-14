@@ -1,3 +1,58 @@
+/* small screen */
+@media only screen and (min-width: 360px) and (max-width: 600px) {
+    *{
+        padding: 0px;
+        margin: 0px;
+        background: rgb(243, 2, 2);
+    }
+    
+}
+
+
+
+
+
+/* medium screen */
+@media only screen and (min-width: 601) and (max-width: 800px) {
+    *{
+        padding: 0px;
+        margin: 0px;
+        background: rgb(58, 243, 2);
+    }
+}
+    
+
+
+
+
+/* large screen */
+
+@media only screen and (min-width: 801px) {
+    *{
+        padding: 0px;
+        margin: 0px;
+        background: rgb(243, 2, 2);
+    }
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 *{
     margin: 0;
     padding: 0;
